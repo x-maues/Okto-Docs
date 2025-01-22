@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { ArrowRight, Sparkles, Book, Github } from 'lucide-react';
+import { Sparkles, Book } from 'lucide-react';
 
 export default function HomePage() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
