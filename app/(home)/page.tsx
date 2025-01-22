@@ -7,7 +7,7 @@ export default function HomePage() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
     window.addEventListener('mousemove', handleMouseMove);
@@ -15,7 +15,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <main className="relative min-h-screen flex flex-col items-center justify-center p-8 overflow-hidden bg-gradient-to-b from-black via-purple-950 to-black">
+    <main className="relative min-h-screen flex flex-col items-center justify-center p-8 overflow-hidden bg-gradient-to-b dark:from-black from:white via-purple-950 to-black">
       {/* Animated background blur */}
       <div 
         className="absolute blur-[100px] opacity-50 rounded-full w-96 h-96 bg-gradient-to-r from-blue-500 to-purple-600"
@@ -38,23 +38,23 @@ export default function HomePage() {
           </span>
         </h1>
         
-        <p className="mb-8 text-xl text-gray-300">
-          The Next Generation Layer 2 Solution for Ethereum
+        <p className="mb-8 text-2xl dark:text-gray-300">
+        Unlocking a New Era of Chain Abstraction
         </p>
 
         {/* Feature cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="p-6 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-white/20 transition-all">
-            <h3 className="text-lg font-semibold text-white mb-2">Lightning Fast</h3>
-            <p className="text-gray-400">2000+ TPS with instant finality</p>
+            <h3 className="text-lg font-semibold dark:text-white mb-2">Decentralized Wallet Networks (DWNs):</h3>
+            <p className="dark:text-gray-200">2000+ TPS with instant finality</p>
           </div>
           <div className="p-6 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-white/20 transition-all">
-            <h3 className="text-lg font-semibold text-white mb-2">Ultra Secure</h3>
-            <p className="text-gray-400">ZK-powered security guarantees</p>
+            <h3 className="text-lg font-semibold dark:text-white mb-2">Ultra Secure</h3>
+            <p className="dark:text-gray-200">ZK-powered security guarantees</p>
           </div>
           <div className="p-6 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-white/20 transition-all">
-            <h3 className="text-lg font-semibold text-white mb-2">Low Cost</h3>
-            <p className="text-gray-400">Fraction of L1 gas fees</p>
+            <h3 className="text-lg font-semibold dark:text-white mb-2">Low Cost</h3>
+            <p className="dark:text-gray-200">Fraction of L1 gas fees</p>
           </div>
         </div>
 
@@ -72,7 +72,7 @@ export default function HomePage() {
             href="https://github.com/okto-layer"
             target="_blank"
             rel="noopener noreferrer" 
-            className="px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold flex items-center gap-2 transition-all"
+            className="px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 dark:text-white font-semibold flex items-center gap-2 transition-all"
           >
             GitHub
             <div className="w-4 h-4" />
