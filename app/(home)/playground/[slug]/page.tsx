@@ -4,14 +4,15 @@ import { InlineTOC } from "fumadocs-ui/components/inline-toc";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export default async function PlaygroundExample({ params }: { params: { slug: string } }) {
+export default async function BlogPost(props: {
+  params: Promise<{ slug: string }>;
+}): Promise<React.ReactElement> {
+  const params = await props.params;
   const page = playground.getPage([params.slug]);
 
-  if (!page) {
-    notFound();
-  }
+  if (!page) notFound();
 
-  const { title, description, toc, body } = page.data;
+  const { title, description, toc} = page.data;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
@@ -50,7 +51,8 @@ export default async function PlaygroundExample({ params }: { params: { slug: st
             </div>
 
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-8">
-              <body components={defaultMdxComponents} />
+            <page.data.body components={defaultMdxComponents} />
+
             </div>
           </article>
         </div>
