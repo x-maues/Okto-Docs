@@ -1,0 +1,62 @@
+---
+title: DTN
+description: ...
+---
+# 🔗 Decentralized Transaction Networks (DTNs)
+
+The **Decentralized Transaction Network (DTN)** is the **orchestrator** that makes multi-chain transactions seamless. Whether you're swapping tokens, bridging assets, or executing complex DeFi strategies, the DTN automates the entire process, ensuring reliability and speed across blockchains.
+
+---
+
+## 🌟 Key Features of DTNs
+
+### 🚦 **Orchestration for Multi-Chain Operations**
+The DTN breaks down complex workflows into **smaller tasks** and executes them in the correct sequence. It ensures each step completes successfully, retrying if needed.
+
+### ⚡ **Optimized Transaction Paths**
+By analyzing real-time network conditions, the DTN determines the most efficient routes, saving you time and fees.
+
+### 🛡️ **Error Handling**
+With DTNs, you’re protected from common blockchain issues like chain reorganizations, double spends, and fluctuating gas fees.  
+
+### 🔄 **Automation Across Chains**
+DTNs transform multi-step processes—like bridging, swapping, and staking—into a **single user request**. No more jumping between DApps.
+
+---
+
+## 🚀 How DTNs Work: A Step-by-Step Example
+
+### **Scenario: Move and Stake USDC**
+Imagine you want to move **USDC from Ethereum to BNB Chain** and stake it, all in one request. Here’s how the DTN makes it happen:
+
+1. **User Request:** You initiate the action via a DApp connected to the Okto Gateway.
+2. **Task Creation:** The request is converted into a “job” on the Okto Chain.
+3. **Subtask Orchestration:** The DTN breaks the job into smaller subtasks:
+   - Bridge USDC from Ethereum to BNB Chain.
+   - Swap tokens if needed.
+   - Stake USDC on BNB.
+4. **Execution:** Each subtask is handled sequentially or in parallel, with retries for failures.
+5. **Completion:** Your USDC is staked, and the Okto Chain logs the entire process for transparency.
+
+---
+
+## 📊 Visual Workflow
+
+> **Tip:** Use this diagram to understand how DTNs streamline multi-chain transactions.
+
+---
+
+## 🛠️ Developer Tools for DTNs
+
+### **API Overview**
+Here’s how to integrate DTN functionality into your DApp:
+
+```json
+{
+  "action": "transferAndStake",
+  "sourceChain": "Ethereum",
+  "destinationChain": "BNB",
+  "token": "USDC",
+  "amount": "1000",
+  "stake": true
+}
