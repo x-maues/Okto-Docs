@@ -15,7 +15,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <main className="relative min-h-screen flex flex-col items-center justify-center p-8 overflow-hidden bg-gradient-to-b dark:from-black from:white via-purple-950 to-black">
+    <main className="relative min-h-screen flex flex-col items-center md:py-0 py-20 justify-center p-8 overflow-hidden bg-gradient-to-b dark:from-black from:white via-purple-950 to-black">
       {/* Animated background blur */}
       <div 
         className="absolute blur-[100px] opacity-50 rounded-full w-96 h-96 bg-gradient-to-r from-blue-500 to-purple-900"
