@@ -1,0 +1,30 @@
+---
+title: DTN Orchestration and Task Management
+
+description: Once the job is created, the Distributed Task Network (DTN) picks it up and breaks it down into smaller subtasks. Each subtask is executed based on the predefined process. The SDK provides methods to orchestrate these tasks.
+---
+
+# Okto Gateway SDK Documentation
+
+Welcome to the official SDK documentation for the **Okto Gateway**! This guide will help you integrate Okto’s SDK into your Web3 projects, allowing you to effortlessly interact with Okto Chain for cross-chain transfers, liquidity management, staking, and secure signing.
+
+---
+
+
+Usage:
+
+```javascript
+import { orchestrateJob } from 'okto-gateway-sdk';
+
+const orchestratedJob = orchestrateJob({
+  jobId: job.id, // Job ID from the created job
+  subtasks: [
+    { task: 'bridge', fromChain: 'Ethereum', toChain: 'BNB Chain' }, // Subtask 1: Bridging tokens
+    { task: 'stake', onChain: 'BNB Chain', amount: 1000 }             // Subtask 2: Staking tokens
+  ]
+});
+
+console.log('Job orchestrated successfully:', orchestratedJob);
+```
+
+Embrace the **MDX revolution**! Write documentation that's not just informative, but truly interactive. 🚀📝

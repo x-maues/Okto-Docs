@@ -1,0 +1,54 @@
+---
+title: Okto Gateway SDK Integration Documentation
+description: A comprehensive guide to integrating and using the Okto Gateway SDK for cross-chain transfers, staking, and task management.
+---
+
+# Okto Gateway SDK Documentation
+
+Welcome to the official SDK documentation for the **Okto Gateway**! This guide will help you integrate Okto’s SDK into your Web3 projects, allowing you to effortlessly interact with Okto Chain for cross-chain transfers, liquidity management, staking, and secure signing.
+
+
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Job Creation](#job-creation)
+- [DTN Orchestration and Task Management](#dtn-orchestration-and-task-management)
+- [ULL Liquidity Optimization](#ull-liquidity-optimization)
+- [Transaction Preparation and Execution](#transaction-preparation-and-execution)
+- [Secure Signing with DWN](#secure-signing-with-dwn)
+- [Error Handling and Logging](#error-handling-and-logging)
+- [SDK Methods Overview](#sdk-methods-overview)
+- [Advanced Usage](#advanced-usage)
+
+---
+
+## Getting Started
+
+Before you begin, ensure that you have installed the Okto Gateway SDK into your project. You can install it using npm or yarn:
+
+```javascript   
+npm install okto-gateway-sdk
+# or
+yarn add okto-gateway-sdk
+```
+Usage:
+
+```javascript
+import { createJob } from 'okto-gateway-sdk';
+
+const jobDetails = {
+  action: 'transfer',               // Action to perform
+  sourceChain: 'Ethereum',          // Source blockchain (e.g., Ethereum)
+  targetChain: 'BNB Chain',         // Target blockchain (e.g., BNB Chain)
+  token: 'USDC',                    // Token to transfer
+  amount: 1000,                     // Amount of tokens
+  destinationAddress: '0x12345...', // Destination address for staking
+  actionType: 'stake'               // Type of action (e.g., stake on target chain)
+};
+
+const job = createJob(jobDetails);
+console.log('Job created successfully:', job);
+```
+
+Embrace the **MDX revolution**! Write documentation that's not just informative, but truly interactive. 🚀📝

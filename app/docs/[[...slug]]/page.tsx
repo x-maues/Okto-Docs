@@ -7,6 +7,7 @@ import {
 } from 'fumadocs-ui/page';
 import { notFound } from 'next/navigation';
 import defaultMdxComponents from 'fumadocs-ui/mdx';
+import YouTube from '@/app/components/Youtube';
 
 export default async function Page(props: {
   params: Promise<{ slug?: string[] }>;
@@ -27,6 +28,8 @@ export default async function Page(props: {
   );
 }
 
+
+
 export async function generateStaticParams() {
   return source.generateParams();
 }
@@ -39,6 +42,7 @@ export async function generateMetadata(props: {
   if (!page) notFound();
 
   return {
+    
     title: page.data.title,
     description: page.data.description,
   };

@@ -1,0 +1,35 @@
+---
+title: ULL Liquidity Optimization
+---
+
+description: The Universal Liquidity Layer (ULL) finds the optimal bridging path based on speed, cost, and security. You can query the ULL for the best route to bridge tokens between chains.
+
+# Okto Gateway SDK Documentation
+
+Usage:
+
+```javascript
+import { fetchBestRoute } from 'okto-gateway-sdk';
+
+const route = fetchBestRoute({
+  sourceChain: 'Ethereum',
+  targetChain: 'BNB Chain',
+  token: 'USDC'
+});
+
+console.log('Best route:', route);
+```
+
+this:
+```javascript
+import { batchTransaction } from 'okto-gateway-sdk';
+
+const batchData = [
+  { fromChain: 'Ethereum', toChain: 'BNB Chain', token: 'USDC', amount: 500 },
+  { fromChain: 'BNB Chain', toChain: 'Polygon', token: 'USDC', amount: 300 }
+];
+
+batchTransaction(batchData);
+```
+
+Embrace the **MDX revolution**! Write documentation that's not just informative, but truly interactive. 🚀📝
