@@ -69,7 +69,7 @@ export default function HomePage() {
           </Link>
           
           <a 
-            href="https://github.com/okto-layer"
+            href="https://github.com/x-maues/Okto-Docs"
             target="_blank"
             rel="noopener noreferrer" 
             className="px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 dark:text-white font-semibold flex items-center gap-2 transition-all"
