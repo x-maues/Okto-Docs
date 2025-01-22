@@ -1,0 +1,44 @@
+---
+title: Okto's Universal Liquidity Layer (ULL)
+description: ULL
+date: 2024-4-2
+author: Ant
+---
+---
+
+### Blog 2: **Introducing Okto's Universal Liquidity Layer (ULL)**
+
+```mdx
+---
+title: Introducing Okto's Universal Liquidity Layer (ULL)
+description: Discover how Okto’s Universal Liquidity Layer (ULL) simplifies cross-chain bridging and transaction optimization.
+author: Okto Team
+date: 2025-01-23
+---
+
+# How Okto’s Universal Liquidity Layer Optimizes Cross-Chain Transactions
+
+Bridging assets between different blockchains is a critical operation in Web3. However, ensuring that transactions are fast, cost-efficient, and secure can be challenging. That’s where **Okto's Universal Liquidity Layer (ULL)** comes in.
+
+## What is the ULL?
+
+The **Universal Liquidity Layer (ULL)** is a proprietary feature of Okto that aggregates liquidity from multiple cross-chain solutions (such as LayerZero, Socket, etc.) to find the optimal bridging route for assets.
+
+By analyzing multiple factors—such as **transaction speed**, **security**, and **cost**—ULL ensures that every cross-chain transaction is as efficient as possible.
+
+### Key Benefits of the ULL
+
+- **Best Route Selection**: ULL compares different cross-chain liquidity providers and selects the fastest, cheapest, and most secure route for token bridging.
+- **Optimized for Users**: Users don't have to manually select a route or worry about the best chain for their tokens. Okto automatically picks the best route for them.
+- **Scalable**: As more blockchains and liquidity sources are integrated into Okto, the ULL will continue to get smarter, offering even better performance.
+
+## Example: Fetching the Best Route
+
+```js
+const routeDetails = {
+  fromChain: 'Ethereum',
+  toChain: 'BNB Chain',
+  asset: 'USDC',
+};
+
+fetchBestRoute(routeDetails);

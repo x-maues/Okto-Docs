@@ -14,7 +14,7 @@ export default async function BlogPost(props: {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
-      <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <header className="pt-16 pb-12">
           <Link 

@@ -45,15 +45,15 @@ export default function HomePage() {
 
         {/* Feature cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <div className="p-6 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-white/20 transition-all">
+          <div className="p-6 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-white/60 transition-all">
             <h3 className="text-lg font-semibold dark:text-white mb-2">Decentralized Wallet Networks (DWNs):</h3>
             <p className="dark:text-gray-200">Single, unified wallet</p>
           </div>
-          <div className="p-6 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-white/20 transition-all">
+          <div className="p-6 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-white/60 transition-all">
             <h3 className="text-lg font-semibold dark:text-white mb-2">Unified Liquidity Layer (ULL)</h3>
             <p className="dark:text-gray-200">Aggregator of aggregators</p>
           </div>
-          <div className="p-6 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-white/20 transition-all">
+          <div className="p-6 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-white/60 transition-all">
             <h3 className="text-lg font-semibold dark:text-white mb-2">Decentralized Transaction Networks (DTNs)</h3>
             <p className="dark:text-gray-200">Automated and sequenced</p>
           </div>

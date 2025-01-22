@@ -6,6 +6,8 @@ description: ...
 
 ## 🌍 **Trustless Coordination**
 
+The Universal Liquidity Layer (ULL) finds the optimal bridging path based on speed, cost, and security. You can query the ULL for the best route to bridge tokens between chains.
+
 ```javascript
 import { useULL } from 'okto-sdk';
 
@@ -20,3 +22,14 @@ ull.swap({
   destinationChain: 'BNB Chain',
 });
 ```
+The fetchBestRoute function asks the ULL to evaluate different cross-chain solutions like Socket or LayerZero, and return the best path considering factors like transaction fees and speed.
+```javascript
+import { fetchBestRoute } from 'okto-gateway-sdk';
+
+const route = fetchBestRoute({
+  sourceChain: 'Ethereum',
+  targetChain: 'BNB Chain',
+  token: 'USDC'
+});
+
+console.log('Best route:', route);
