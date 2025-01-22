@@ -1,4 +1,5 @@
 import { defineConfig, defineCollections } from "fumadocs-mdx/config";
+import { remarkMermaid } from '@theguild/remark-mermaid';
 
 export const docs = defineCollections({
   type: "doc",
@@ -15,4 +16,14 @@ export const blog = defineCollections({
   dir: "content/blog",
 });
 
-export default defineConfig();
+export const play = defineCollections({
+  type: "doc",
+  dir: "content/playground",
+});
+
+
+export default defineConfig({
+  mdxOptions: {
+    remarkPlugins: [remarkMermaid],
+  },
+});

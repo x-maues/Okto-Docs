@@ -1,4 +1,4 @@
-import { docs, meta, blog as blogPosts } from "@/.source";
+import { docs, meta, blog as blogPosts, play as play } from "@/.source";
 import { createMDXSource } from "fumadocs-mdx";
 import { loader } from "fumadocs-core/source";
 
@@ -11,3 +11,9 @@ export const blog = loader({
   baseUrl: "/blog",
   source: createMDXSource(blogPosts, []),
 });
+
+export const playground = loader({
+  baseUrl: "/playground",
+  source: createMDXSource(play, []),
+});
+

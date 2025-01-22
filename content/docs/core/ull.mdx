@@ -2,3 +2,21 @@
 title: ULL
 description: ...
 ---
+# 💵 Universal Liquidity Layer
+
+## 🌍 **Trustless Coordination**
+
+```javascript
+import { useULL } from 'okto-sdk';
+
+// Initialize ULL for cross-chain swaps
+const ull = useULL({ chain: 'Ethereum' });
+
+// Swap USDC on Ethereum to BNB on BNB Chain
+ull.swap({
+  fromToken: 'USDC',
+  toToken: 'BNB',
+  amount: 100,
+  destinationChain: 'BNB Chain',
+});
+```

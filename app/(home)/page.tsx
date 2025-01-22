@@ -18,22 +18,23 @@ export default function HomePage() {
     <main className="relative min-h-screen flex flex-col items-center justify-center p-8 overflow-hidden bg-gradient-to-b dark:from-black from:white via-purple-950 to-black">
       {/* Animated background blur */}
       <div 
-        className="absolute blur-[100px] opacity-50 rounded-full w-96 h-96 bg-gradient-to-r from-blue-500 to-purple-600"
+        className="absolute blur-[100px] opacity-50 rounded-full w-96 h-96 bg-gradient-to-r from-blue-500 to-purple-900"
         style={{
-          transform: `translate(${mousePosition.x * 0.02}px, ${mousePosition.y * 0.02}px)`,
+          transform: `translate(${mousePosition.x * 0.06}px, ${mousePosition.y * 0.1}px)`,
           transition: 'transform 0.2s ease-out'
         }}
       />
+      
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         {/* Floating sparkles icon */}
         <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <Sparkles className="w-8 h-8 text-yellow-400" />
+          <Sparkles className="w-8 h-8 text-black dark:text-white" />
         </div>
 
         {/* Main title */}
         <h1 className="mb-6 text-6xl font-extrabold">
-          <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 text-transparent bg-clip-text">
+          <span className="bg-gradient-to-r from-purple-400  to-blue-500 text-transparent bg-clip-text">
             Okto Layer
           </span>
         </h1>
@@ -46,15 +47,15 @@ export default function HomePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="p-6 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-white/20 transition-all">
             <h3 className="text-lg font-semibold dark:text-white mb-2">Decentralized Wallet Networks (DWNs):</h3>
-            <p className="dark:text-gray-200">2000+ TPS with instant finality</p>
+            <p className="dark:text-gray-200">Single, unified wallet</p>
           </div>
           <div className="p-6 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-white/20 transition-all">
-            <h3 className="text-lg font-semibold dark:text-white mb-2">Ultra Secure</h3>
-            <p className="dark:text-gray-200">ZK-powered security guarantees</p>
+            <h3 className="text-lg font-semibold dark:text-white mb-2">Unified Liquidity Layer (ULL)</h3>
+            <p className="dark:text-gray-200">Aggregator of aggregators</p>
           </div>
           <div className="p-6 rounded-xl bg-white/5 backdrop-blur-lg border border-white/10 hover:border-white/20 transition-all">
-            <h3 className="text-lg font-semibold dark:text-white mb-2">Low Cost</h3>
-            <p className="dark:text-gray-200">Fraction of L1 gas fees</p>
+            <h3 className="text-lg font-semibold dark:text-white mb-2">Decentralized Transaction Networks (DTNs)</h3>
+            <p className="dark:text-gray-200">Automated and sequenced</p>
           </div>
         </div>
 
