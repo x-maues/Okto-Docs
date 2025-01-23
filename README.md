@@ -79,14 +79,15 @@ This section provides developer-friendly documentation for SDKs in different pro
   Path: `/docs/sdks/overview`  
   Description: High-level overview of all SDKs available for interacting with the Okto Layer.
 
-- **JavaScript SDK**  
+- **React SDK**  
   Path: `/docs/sdks/javascript`  
   Description: Detailed guide for using the JavaScript SDK to interact with Okto Layer APIs and features.
 
-- **Python SDK**  
-  Path: `/docs/sdks/python`  
+- **Flutter SDK**  
+  Path: `/docs/sdks/flutter`  
   Description: A comprehensive guide to integrating Okto Layer functionality into Python applications.
-
+ 
+ ## Upcoming...
 - **Go SDK**  
   Path: `/docs/sdks/go`  
   Description: Step-by-step documentation for developers using the Go SDK to interact with the Okto Layer.
@@ -159,15 +160,7 @@ The sidebar is defined in the project’s configuration file. Here’s an exampl
       link: /docs/sdks/overview
     - label: JavaScript SDK
       link: /docs/sdks/javascript
-    - label: Python SDK
-      link: /docs/sdks/python
-    - label: Go SDK
-      link: /docs/sdks/go
-    - label: Rust SDK
-      link: /docs/sdks/rust
-    - label: Java SDK
-      link: /docs/sdks/java
-
+    
 - label: Guides
   items:
     - label: Integration Guide
