@@ -41,7 +41,7 @@ Welcome to the **Okto Layer Documentation Project**, a comprehensive and interac
 
 
 ---
-title: New Feature
+title: Flowchart
 description: Documentation for the new feature in Okto Layer.
 ---
 
@@ -54,4 +54,71 @@ graph TD;
 A[User] -->|Interacts with| B[API Gateway];
 B --> C[Okto Layer];
 C --> D[Blockchain Network];
+```
+
+# 🧩 Custom Components
+Interactive API Playground
+The API Playground allows users to test APIs directly within the documentation.
+
+Usage:
+```javascript
+import ApiExplorer from "../components/ApiExplorer";
+
+<ApiExplorer
+   endpoints={[
+      { method: "GET", path: "/wallets", description: "Fetch all wallets" },
+      { method: "POST", path: "/transactions", description: "Create a transaction" },
+   ]}
+/>;
+```
+
+# 📊 Dynamic Diagrams
+Mermaid.js
+Mermaid.js is used to create flowcharts and diagrams in the documentation.
+
+Example:
+```plaintext
+graph TD;
+subgraph AA [Consumers]
+A[Mobile App];
+B[Web App];
+C[Node.js Client];
+end
+subgraph BB [Services]
+E[REST API];
+F[GraphQL API];
+end
+Z[Gateway];
+A --> Z;
+B --> Z;
+C --> Z;
+Z --> E;
+Z --> F;
+```
+
+```plaintext
+```mermaid
+[Your Mermaid.js code here]
+```
+
+# 🛡️ Deployment
+Deploy your project to any platform supporting Next.js, such as Vercel or Netlify.
+
+Deploy on Vercel
+Install the Vercel CLI:
+
+```bash
+npm install -g vercel
+```
+
+```bash
+vercel
+```
+
+# 📃 License
+This project is licensed under the MIT License.
+```plaintext
+
+This markdown continuation is tailored for ease of use in a **Fumadocs** project and includes instructions for working with content, reusable components, diagrams, and deployment steps.
+
 ```
