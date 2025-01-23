@@ -39,6 +39,153 @@ Welcome to the **Okto Layer Documentation Project**, a comprehensive and interac
 └── README.md                         # Project readme
 ```
 
+# Documentation Sidebar Structure
+
+This document explains the sidebar structure for the Fumadocs-based documentation project, including the **core components**, **SDKs**, and additional sections for guides and resources.
+
+---
+
+## 📚 Sidebar Navigation Overview
+
+The sidebar provides a clear, hierarchical structure for navigating through the documentation. Below is the detailed structure for the sidebar, including all links to pages and sections.
+
+### **Core Components**
+
+The core components section focuses on explaining the primary building blocks of the Okto Layer.
+
+- **DTN (Decentralized Transaction Network)**  
+  Path: `/docs/core/dtn`  
+  Description: Learn how the DTN automates complex multi-chain transactions with seamless orchestration.
+
+- **DWN (Decentralized Wallet Network)**  
+  Path: `/docs/core/dwn`  
+  Description: Understand the unified, secure wallet system that spans multiple blockchains.
+
+- **OktoChain**  
+  Path: `/docs/core/oktochain`  
+  Description: Explore the trustless coordination layer that ensures transparency and decentralization.
+
+- **ULL (Unified Liquidity Layer)**  
+  Path: `/docs/core/ull`  
+  Description: Dive into the efficient cross-chain swapping and bridging powered by ERC-7683.
+
+---
+
+### **SDKs**
+
+This section provides developer-friendly documentation for SDKs in different programming languages.
+
+- **SDK Overview**  
+  Path: `/docs/sdks/overview`  
+  Description: High-level overview of all SDKs available for interacting with the Okto Layer.
+
+- **JavaScript SDK**  
+  Path: `/docs/sdks/javascript`  
+  Description: Detailed guide for using the JavaScript SDK to interact with Okto Layer APIs and features.
+
+- **Python SDK**  
+  Path: `/docs/sdks/python`  
+  Description: A comprehensive guide to integrating Okto Layer functionality into Python applications.
+
+- **Go SDK**  
+  Path: `/docs/sdks/go`  
+  Description: Step-by-step documentation for developers using the Go SDK to interact with the Okto Layer.
+
+- **Rust SDK**  
+  Path: `/docs/sdks/rust`  
+  Description: Documentation for building high-performance blockchain applications with the Rust SDK.
+
+- **Java SDK**  
+  Path: `/docs/sdks/java`  
+  Description: Information for developers using the Java SDK to leverage the Okto Layer capabilities.
+
+---
+
+### **Guides**
+
+This section includes practical guides to help developers and users get the most out of the Okto Layer.
+
+- **Integration Guide**  
+  Path: `/docs/guides/integration`  
+  Description: A walkthrough for integrating the Okto Layer into your application.
+
+- **API Usage**  
+  Path: `/docs/guides/api-usage`  
+  Description: Instructions for interacting with the Okto Layer APIs, including examples.
+
+- **Developer FAQ**  
+  Path: `/docs/guides/faq`  
+  Description: Common questions and solutions for developers working with the Okto Layer.
+
+---
+
+### **Resources**
+
+The resources section provides access to additional technical information, references, and updates.
+
+- **API Reference**  
+  Path: `/docs/resources/api-reference`  
+  Description: Detailed API documentation for the Okto Layer endpoints.
+
+- **Whitepaper**  
+  Path: `/docs/resources/whitepaper`  
+  Description: In-depth explanation of the Okto Layer architecture and design principles.
+
+- **Changelog**  
+  Path: `/docs/resources/changelog`  
+  Description: A log of updates, improvements, and fixes for the Okto Layer.
+
+---
+
+## 🔧 How to Configure the Sidebar
+
+The sidebar is defined in the project’s configuration file. Here’s an example YAML structure for the sidebar:
+
+```yaml
+- label: Core Components
+  items:
+    - label: DTN (Decentralized Transaction Network)
+      link: /docs/core/dtn
+    - label: DWN (Decentralized Wallet Network)
+      link: /docs/core/dwn
+    - label: OktoChain
+      link: /docs/core/oktochain
+    - label: ULL (Unified Liquidity Layer)
+      link: /docs/core/ull
+
+- label: SDKs
+  items:
+    - label: SDK Overview
+      link: /docs/sdks/overview
+    - label: JavaScript SDK
+      link: /docs/sdks/javascript
+    - label: Python SDK
+      link: /docs/sdks/python
+    - label: Go SDK
+      link: /docs/sdks/go
+    - label: Rust SDK
+      link: /docs/sdks/rust
+    - label: Java SDK
+      link: /docs/sdks/java
+
+- label: Guides
+  items:
+    - label: Integration Guide
+      link: /docs/guides/integration
+    - label: API Usage
+      link: /docs/guides/api-usage
+    - label: Developer FAQ
+      link: /docs/guides/faq
+
+- label: Resources
+  items:
+    - label: API Reference
+      link: /docs/resources/api-reference
+    - label: Whitepaper
+      link: /docs/resources/whitepaper
+    - label: Changelog
+      link: /docs/resources/changelog
+```
 
 ---
 title: Flowchart
